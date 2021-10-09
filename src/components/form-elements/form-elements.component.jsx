@@ -1,3 +1,5 @@
+//This is a structure of a form element. It uses Formik and Yup to run successfully.
+
 import React from "react"
 import { useField } from "formik"
 
