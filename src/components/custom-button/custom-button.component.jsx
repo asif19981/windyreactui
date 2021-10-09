@@ -10,8 +10,8 @@ const CustomButton = ({
 }) => (
   <button
     className={`
-      ${isPrimary && "primary-button"}
-      ${isSecondary && "secondary-button"}
+      ${isPrimary ? "primary-button" : ""}
+      ${isSecondary ? "secondary-button" : ""}
       ${utilities}
       default-button-styles
     `}
