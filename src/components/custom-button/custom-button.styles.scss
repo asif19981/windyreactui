@@ -1,0 +1,36 @@
+@import "../../styles/variables.scss";
+
+.primary-button {
+  background: $color-primary;
+  color: $primary-text-color;
+}
+
+.secondary-button {
+  background: transparent;
+  color: $primary-text-color;
+  border: 3px solid #000000;
+}
+
+.default-button-styles {
+  width: 130px;
+  height: 56px;
+  border-radius: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $default-font;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  &:focus {
+    outline: none;
+  }
+}
+
+@screen lg {
+  .default-button-styles {
+    font-size: 1.125rem;
+    width: 200px;
+    height: 56px;
+  }
+}
